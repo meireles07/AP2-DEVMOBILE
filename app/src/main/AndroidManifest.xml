@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,8 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SeuFilme"
         android:usesCleartextTraffic="true">
+
+        <!-- SplashActivity: tela inicial, ponto de entrada do app -->
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -22,6 +25,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- FormularioActivity: tela de perguntas -->
+        <activity
+            android:name=".FormularioActivity"
+            android:exported="false"/>
+
+        <!-- ResultadosActivity: tela de recomendações -->
+        <activity
+            android:name=".ResultadosActivity"
+            android:exported="false"/>
+
+        <!-- HistoricoActivity: tela de histórico -->
+        <activity
+            android:name=".HistoricoActivity"
+            android:exported="false"/>
+
+        <!-- DetalheActivity: tela de detalhe do filme -->
+        <activity
+            android:name=".DetalheActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
