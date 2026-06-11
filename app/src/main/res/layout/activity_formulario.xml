@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Cabeçalho -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vamos encontrar seu filme!"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responda as perguntas abaixo"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Pergunta 1: Nome -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual é o seu nome?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- EditText: campo de texto (componente gráfico 4) -->
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome"
+            android:inputType="textPersonName"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Pergunta 2: Tipo de conteúdo -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O que você quer assistir?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- RadioButton: seleção única (componente gráfico 5) -->
+        <RadioGroup
+            android:id="@+id/rgTipoConteudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbFilme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🎬 Filme"
+                android:textColor="#1B2A4A"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbSerie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📺 Série"
+                android:textColor="#1B2A4A"/>
+
+        </RadioGroup>
+
+        <!-- Pergunta 3: Gênero favorito -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qual seu gênero favorito?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Spinner: lista suspensa (componente gráfico 6) -->
+        <Spinner
+            android:id="@+id/spinnerGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Pergunta 4: Plataformas -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quais plataformas você tem?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- CheckBox: seleção múltipla (componente gráfico 7) -->
+        <CheckBox
+            android:id="@+id/cbNetflix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netflix"
+            android:textColor="#1B2A4A"
+            android:buttonTint="#E8541A"/>
+
+        <CheckBox
+            android:id="@+id/cbPrime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prime Video"
+            android:textColor="#1B2A4A"
+            android:buttonTint="#E8541A"/>
+
+        <CheckBox
+            android:id="@+id/cbDisney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disney+"
+            android:textColor="#1B2A4A"
+            android:buttonTint="#E8541A"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Pergunta 5: Humor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Como você está se sentindo hoje?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1B2A4A"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvHumorSelecionado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selecione seu humor"
+            android:textSize="14sp"
+            android:textColor="#888888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Switch: liga/desliga (componente gráfico 8) -->
+        <Switch
+            android:id="@+id/switchAnimado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estou animado para assistir!"
+            android:textColor="#1B2A4A"
+            android:thumbTint="#E8541A"
+            android:trackTint="#FFCCAA"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Botão de enviar -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Recomendações 🍿"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#E8541A"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
