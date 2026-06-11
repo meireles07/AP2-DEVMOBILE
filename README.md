@@ -71,14 +71,16 @@ python -m uvicorn main:app --reload
 
 ### Fotos do Aplicativo
 
-![Tela Inicial](fotos/1tela-inicial.png)
-![Tela Cadastro](fotos/2tela-cadastro.png)
-![Tela Recomendacoes](fotos/3tela-recomendacoes.png)
-![Tela Detalhes Filme](fotos/4tela-detalhesfilme.png)
-![Tela Trailer](fotos/5tela-trailer.png)
-![Tela Compartilhar](fotos/6tela-compartilhar.png)
-![Tela Historico](fotos/7tela-historico.png)
-![Tela Apagar](fotos/8tela-apagar.png)
+## Screenshots
+
+<img src="fotos/1tela-inicial.png" width="250"/>
+<img src="fotos/2tela-cadastro.png" width="250"/>
+<img src="fotos/3tela-recomendacoes.png" width="250"/>
+<img src="fotos/4tela-detalhesfilme.png" width="250"/>
+<img src="fotos/5tela-trailer.png" width="250"/>
+<img src="fotos/6tela-compartilhar.png" width="250"/>
+<img src="fotos/7tela-historico.png" width="250"/>
+<img src="fotos/8tela-apagar.png" width="250"/>
 
 ## Aluno
 Desenvolvido por **Bernardo Meireles** — AP2 Desenvolvimento Mobile 2026.1
