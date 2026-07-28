@@ -83,4 +83,4 @@ python -m uvicorn main:app --reload
 <img src="fotos/8tela-apagar.png" width="250"/>
 
 ## Aluno
-Desenvolvido por **Bernardo Meireles** — AP2 Desenvolvimento Mobile 2026.1
+Desenvolvido por **Bernardo Meireles** — AP2 Desenvolvimento Mobile 2026.1 - Ibmec Barra
